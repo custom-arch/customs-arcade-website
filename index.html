@@ -22,7 +22,6 @@
       color: #00ffff;
       background-color: #000;
 
-      /* Retro grid & neon sky */
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
         repeating-linear-gradient(to right, #111 0 2px, transparent 2px 40px),
@@ -40,7 +39,7 @@
       left: 20px;
       width: 100px;
       height: auto;
-      box-shadow: 4px 4px 0 #ff00ff, 8px 8px 0 #00ffff;
+      box-shadow: 2px 2px 0 #ff00ff, 4px 4px 0 #00ffff;
       z-index: 10;
     }
 
@@ -49,9 +48,8 @@
       color: #ff00ff;
       text-align: center;
       text-shadow:
-        0 0 10px #ff00ff,
-        0 0 20px #ff00ff,
-        0 0 40px #ff00ff;
+        0 0 4px #ff00ff,
+        0 0 8px #ff00ff;
       animation: flicker 3s infinite;
       position: absolute;
       top: 50%;
@@ -74,18 +72,21 @@
         opacity: 1;
       }
       20%, 24%, 55% {
-        opacity: 0.3;
+        opacity: 0.6;
       }
     }
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        text-shadow:
+          0 0 2px #ff00ff,
+          0 0 4px #ff00ff;
       }
 
       .logo {
         width: 70px;
-        box-shadow: 3px 3px 0 #ff00ff, 6px 6px 0 #00ffff;
+        box-shadow: 1px 1px 0 #ff00ff, 2px 2px 0 #00ffff;
       }
     }
   </style>
